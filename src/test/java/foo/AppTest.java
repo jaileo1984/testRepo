@@ -12,6 +12,8 @@ public class AppTest{
 	
 	
 	public static WebDriver driver ;
+	
+ App app;
 
 	@BeforeSuite
 	public void setup(){
@@ -21,10 +23,12 @@ public class AppTest{
 		
 		driver= new ChromeDriver();
 		
+		app = new App();
+		
 	
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void login(){
 		
 		driver.get("http://google.com");
@@ -35,6 +39,44 @@ public class AppTest{
 		
 		Assert.assertEquals(driver.getTitle(), "Google");
 	}
+	
+	@Test
+	public void verifyAccount(){
+		
+	
+		System.out.println("Inside Verify ");
+		
+		Assert.assertEquals(app.getAccountName(), "QATester");
+	}
+	
+	@Test
+	public void verifyAddAccount(){
+		
+	
+		System.out.println("Inside add account");
+		
+		Assert.assertEquals(app.addAccount(2, 3), 5);
+	}
+	
+	@Test
+	public void verifyMultiplyAccount(){
+		
+	
+		System.out.println("Inside mutiply account");
+		
+		Assert.assertEquals(app.mutiplyAccount(4, 5),20);
+	}
+	
+	@Test
+	public void verifyDeleteAccount(){
+		
+	
+		System.out.println("Inside Delete  account");
+		
+		Assert.assertEquals(app.deleteAccount(10, 5),5);
+	}
+	
+	
 	
 	@AfterSuite
 	public void tearDown(){
