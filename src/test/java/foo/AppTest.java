@@ -23,6 +23,8 @@ public class AppTest{
 	public void login(){
 		
 		driver.get("http://gmail.com");
+		
+		System.out.println("Insie login page");
 	}
 	
 	@AfterSuite
