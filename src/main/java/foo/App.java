@@ -28,9 +28,9 @@ public int  addAccount(int a,int b){
 public int  mutiplyAccount(int a,int b){
 	
 	
-	int c= a*b;
+	int d= a*b;
 	
-	return c;
+	return d;
 	
 	
 }
