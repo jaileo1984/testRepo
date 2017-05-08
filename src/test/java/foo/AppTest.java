@@ -28,7 +28,7 @@ public class AppTest{
 	
 	}
 	
-	@Test(enabled=false)
+	@Test
 	public void login(){
 		
 		driver.get("http://google.com");
