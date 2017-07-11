@@ -9,7 +9,7 @@ public class App {
 public String getAccountName(){
 	
 	
-	return "QATester";
+	return "QATester1";
 	
 	
 }
