@@ -14,7 +14,6 @@ public class AppTest{
 	public static WebDriver driver ;
 	
  App app;
-
 	@BeforeSuite
 	public void setup(){
 		
