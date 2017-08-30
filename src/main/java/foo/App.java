@@ -1,5 +1,4 @@
 package foo;
-
 /**
  * Hello world!
  *
