@@ -9,7 +9,7 @@ public String getAccountName(){
 
 //addinga comment
 		
-	return "QATester";
+	return "QATesterdev2";
 	
 }
 
